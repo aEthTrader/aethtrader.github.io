@@ -20,16 +20,13 @@ var getJSON = function(url, callback) {
     xhr.send();
 };
 
-getJSON('http://time.jsontest.com',  function(err, data) {
+getJSON('https://api.ethplorer.io/getTokenInfo/0xc0f9bd5fa5698b6505f643900ffa515ea5df54a9?apiKey=freekey&price[ts]',  function(err, data) {
     
     if (err != null) {
         console.error(err);
     } else {
         
-        var text = `Date: ${data.date}
-Time: ${data.time}
-Unix time: ${data.milliseconds_since_epoch}`
-    
+        var text = `Total Supply: ${data.totalSupply}`
         console.log(text);
     }
 });
