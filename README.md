@@ -1,1 +1,1 @@
-# aethtrader.github.io
+aethtrader.github.io
