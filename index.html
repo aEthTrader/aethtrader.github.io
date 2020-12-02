@@ -26,7 +26,7 @@ getJSON('https://api.ethplorer.io/getTokenInfo/0xc0f9bd5fa5698b6505f643900ffa515
         console.error(err);
     } else {
         
-        var text = `Total Supply: ${data.totalSupply}`
+        var text = `${data.totalSupply}`
         console.log(text);
     }
 });
