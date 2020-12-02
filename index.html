@@ -28,8 +28,9 @@ getJSON('https://api.ethplorer.io/getTokenInfo/0xc0f9bd5fa5698b6505f643900ffa515
         
         var total_units = `${data.totalSupply}`
         var total_whole_units = total_units / Math.pow(10, 18);
+        var intSupply = parseInt(total_whole_units, 10)
 
-        document.write(total_whole_units);
+        document.write(intSupply);
     }
 });
 
